@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/@suin/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node"
+  }
+}

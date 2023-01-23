@@ -1,0 +1,40 @@
+{
+  "version": "0.0.0-development",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "suin",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "**/*.{js,ts,map}",
+    "!*.{test,spec}.*",
+    "!testUtils.*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16.9"
+  },
+  "name": "@suinplayground/openai-node-typescript",
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "openai": "^3.1.0"
+  },
+  "devDependencies": {
+    "@suin/tsconfig": "^0.0.0",
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "main": "tsx main.ts"
+  }
+}
